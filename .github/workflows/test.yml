@@ -1,0 +1,36 @@
+name: test
+
+# On every pull request, but only on push to master
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  test-node:
+    runs-on: ubuntu-latest
+
+    env:
+      MapboxAccessToken: ${{ secrets.MAPBOX_ACCESS_TOKEN_CI }}
+
+    steps:
+      - uses: actions/checkout@v2.1.1
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Install dependencies
+        run: |
+          yarn bootstrap
+
+      - name: Run tests
+        run: |
+          yarn test ci
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,43 @@
+{
+  "id": "table-of-contents",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "entries": [
+        { "entry": "docs" },
+        { "entry": "docs/whats-new" },
+        { "entry": "docs/upgrade-guide" },
+        { "entry": "docs/contributing" }
+      ]
+    },
+    {
+      "title": "Developer Guide",
+      "entries": [
+        { "entry": "docs/get-started/get-started" },
+        { "entry": "docs/get-started/mapbox-tokens" },
+        { "entry": "docs/get-started/state-management" },
+        { "entry": "docs/get-started/adding-custom-data" },
+        { "entry": "docs/get-started/tips-and-tricks" }
+      ]
+    },
+    {
+      "title": "API Reference",
+      "entries": [
+        { "entry": "docs/api-reference/map" },
+        { "entry": "docs/api-reference/attribution-control" },
+        { "entry": "docs/api-reference/fullscreen-control" },
+        { "entry": "docs/api-reference/geolocate-control" },
+        { "entry": "docs/api-reference/layer" },
+        { "entry": "docs/api-reference/map-provider" },
+        { "entry": "docs/api-reference/marker" },
+        { "entry": "docs/api-reference/navigation-control" },
+        { "entry": "docs/api-reference/popup" },
+        { "entry": "docs/api-reference/scale-control" },
+        { "entry": "docs/api-reference/source" },
+        { "entry": "docs/api-reference/use-control" },
+        { "entry": "docs/api-reference/use-map" },
+        { "entry": "docs/api-reference/types" }
+      ]
+    }
+  ]
+}

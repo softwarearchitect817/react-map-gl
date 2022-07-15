@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "module": "ES2020"
+  },
+  "include":[
+    "examples/**/*",
+    "src/**/*",
+    "test/**/*"
+  ]
+}
